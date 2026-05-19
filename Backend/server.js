@@ -11,7 +11,7 @@ connectDB()       // ← DB connect
 const app = express()
 const PORT = process.env.PORT ?? 7560
 
-app.use(cors({ origin: 'http://localhost:5173' }))
+app.use(cors({ origin: 'http://localhost:5173' , 'https://todo-frontend-c1tk.onrender.com'}))
 app.use(express.json())
 
 app.use('/api/todos', todoRoutes)
